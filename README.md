@@ -32,3 +32,10 @@ curl -X 'POST' \
 
 ## level1 python application docker packaging
 - python 3.8 docker image를 사용해 application을 빌드 해주고 포트를 9000번 으로 열어주세요
+
+
+### answer
+```
+docker build -t docker-sample .
+docker run -it --rm -p 9000:8000 docker-sample
+```
